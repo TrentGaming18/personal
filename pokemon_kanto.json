@@ -1,0 +1,57 @@
+{
+    "pokedex": [
+      {
+        "dex_number": "0001",
+        "name": "Bulbasaur",
+        "type": ["Grass", "Poison"],
+        "classification": "Seed Pokemon",
+        "abilities": [],
+        "height": {
+          "ft": "2'04\"",
+          "m": "0.7m"
+        },
+        "weight": {
+          "lbs": "15.2 lbs",
+          "kg": "6.9 kg"
+        },
+        "capture_rate": 45,
+        "weaknesses": ["Fire", "Flying", "Psychic", "Ice"],
+        "locations": {
+          "red_blue": ["Pallet Town"],
+          "yellow": ["Cerulean City"],
+          "gold_silver": [],
+          "crystal": [],
+          "ruby_sapphire": [],
+          "fire_red_leaf_green": ["Pallet Town"],
+          "emerald": [],
+          "diamond_pearl": [],
+          "platinum": [],
+          "heartgold_soulsilver": ["Pallet Town"],
+          "black_white": [],
+          "black_2_white_2": [],
+          "x_y": ["Lumiose City"],
+          "omega_ruby_alpha_sapphire": [],
+          "sun_moon": [],
+          "ultra_sun_ultra_moon": ["Route 2"],
+          "let's_go_pikachu_let's_go_eevee": ["Cerulean City", "Viridian Forest"],
+          "brilliant_diamond_shining_pearl":["Grand Underground"],
+          "sword_shield": [],
+          "isle_of_armor":["Gift in the Master Dojo"],
+          "crown_tundra": [],
+          "scarlet_violet":[]
+        },
+        "evolutions": [{"method": "Level up to 16", "to": "Ivysaur"},{"method": "Level up to 32", "to": "Venusaur"}],
+        "sprites": {
+            "regular": "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/bulbasaur.png",
+            "shiny": "https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/shiny/bulbasaur.png"
+        },
+        "moveset": {
+            "level_up": [],
+            "tm": [],
+            "tr": [],
+            "egg_moves": []
+          },
+        "forms": []
+      }
+    ]
+      }
