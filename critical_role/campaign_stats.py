@@ -106,32 +106,32 @@ def get_character_stats(character_name):
 # Combines all the statistics
 def get_combined_stats():
     combined_stats = {
-        'damage_types': {},
-        'healing_amount': 0,
+        'damage': {},
+        'healing': 0,
         'damage_taken': 0,
-        'times_unconscious': 0,
+        'times_knocked_unconscious': 0,
         'times_killed': 0,
         'kills': 0
     }
 
     for character_stats in campaign_stats.values():
-        for damage_type, amount in character_stats['damage_type'].items():
-            if damage_type not in combined_stats['damage_type']:
-                combined_stats['damage_type'][damage_type] = 0
-            combined_stats['damage_type'][damage_type] += amount
+        for damage, amount in character_stats['damage'].items():
+            if damage not in combined_stats['damage']:
+                combined_stats['damage'][damage] = 0
+            combined_stats['damage'][damage] += amount
 
-        combined_stats['healing_amount'] += character_stats['healing_amount']
-        combined_stats['damage_taken'] += character_stats['damage_taken']
-        combined_stats['times_unconscious'] += character_stats['times_unconscious']
+        combined_stats['healing'] += character_stats['healing']
+        combined_stats['damage'] += int(character_stats['damage'])
+        combined_stats['times_knocked_unconscious'] += character_stats['times_knocked_unconscious']
         combined_stats['times_killed'] += character_stats['times_killed']
 
     print("Combined Stats:")
     print("Damage Types:")
-    for damage_type, amount in combined_stats['damage_types'].items():
-        print(f"- {damage_type}: {amount}")
-    print("Healing Amount:", combined_stats['healing_amount'])
-    print("Damage Taken:", combined_stats['damage_taken'])
-    print("Times Unconscious:", combined_stats['times_unconscious'])
+    for damage, amount in combined_stats['damage'].items():
+        print(f"- {damage}: {amount}")
+    print("Healing Amount:", combined_stats['healing'])
+    print("Damage Taken:", combined_stats['damage'])
+    print("Times Unconscious:", combined_stats['times_knocked_unconscious'])
     print("Times Killed:", combined_stats['times_killed'])
 
 
